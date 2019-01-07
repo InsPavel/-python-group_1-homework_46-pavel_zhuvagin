@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script type="application/javascript">
+		let myArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
+		for(let i = 0; i < myArray.length; i++) {
+            if (myArray[i] === 'молоко') {
+                console.log('хорошо');
+            }
+        else
+            if (myArray[i] === 'пиво') {
+                console.log('плохо');
+            }
+        }
+	</script>
+
+	<script type="application/javascript">
+		function sum(array) {
+            let total = 0;
+            for (let i = 0; i < array.length; i++) {
+                total += array[i];
+            }
+            total = total / array.length;
+            return total;
+        }
+
+		let firstArray = [1, 5, 12, 4, 3];
+		let secondArray = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+		let thirdArray = [3, 10, 17];
+
+		console.log(sum(firstArray));
+		console.log(sum(secondArray));
+		console.log(sum(thirdArray));
+	</script>
+
+	<script>
+		function riddle() {
+            let question = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?");
+            if ((question === '5') || (question === 'пять')) {
+                alert("Ответ верный")
+			}
+			else {
+                alert("Ответ не верный!")
+            }
+        }
+
+        riddle()
+	</script>
+
+	<script>
+		let Duck = {
+		    name: 'Дональд',
+			color: 'белый',
+			old: '1',
+			toStr : function () {
+				return console.log(Duck.name + ', ' + Duck.color + ', ' + Duck.old  + ' год');
+            },
+			say: function () {
+				return console.log('кря-кря')
+            }
+		};
+
+		Duck.toStr();
+		Duck.say()
+	</script>
+</body>
+</html>
